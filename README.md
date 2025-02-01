@@ -1,10 +1,7 @@
 # sada Theme
+CV/Resume of @ompugao.
 
-The sada Theme is a one page responsive portfolio created using Tailwind CSS with light and dark theme.
-
-## Live demo
-
-[Click here](https://sadademo.netlify.com/) for live demo.
+This repo is based on [darshanbaral/sada](https://github.com/darshanbaral/sada.git).
 
 ## Installation
 
