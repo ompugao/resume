@@ -15,7 +15,7 @@ disableKinds = ["taxonomy"]
     # Profile section
     [params.profile]
         name = "Shohei Fujii"
-        title = "Ph.D.,"
+        title = "Ph.D. in Robotics"
         photo = "images/profile.jpg"
 
     # Section for links to social websites
@@ -94,67 +94,99 @@ disableKinds = ["taxonomy"]
     [params.aboutme]
         description = "Passionate about Robotics and Automation, dedicated to eliminating tedious tasks from this world."
 
-    # Experiences section
-    [params.experiences]
-        title = "Experiences"
-
-        [[params.jobs.list]]
-        position = "Job Number 1"
-        dates = "2018 - *Present*"
-		link = "#"
-        company = "Company name 1"
-
-        [[params.jobs.list]]
-        position = "Job Number 2"
-        dates = "2016 - 2018"
-		link = "#"
-        company = "Company name 2"
-        details = "Brief description of the `work` done. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
-    # Projects section
-    [params.projects]
-        title = "Projects"
-
-        [[params.projects.list]]
-        title = "Awesome Project 1"
-        url = "#"
-        description = "Description of the *awesome* project 1 {{<youtube k7tDJjT_BZA>}}"
-		
-		[[params.projects.list]]
-        title = "Awesome Project 2"
-        url = "#"
-        description = "Description of the **awesome** project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
     [params.publications]
         title = "Publications"
 
         [[params.publications.list]]
         title = "Real-time Batched Distance Computation for Time-Optimal Safe Path Tracking - ICRA2024"
         author = "<u>S. Fujii</u>, Q.-C. Pham."
+        url = "https://doi.org/10.1109/ICRA57147.2024.10610196"
         description = "Proposed real-time distance computation method for time-optimal and safe robot-control in real-world applications:{{<youtube iZP_6rD34lA>}}"
 
         [[params.publications.list]]
         title = "Time-Optimal Path Tracking with ISO Safety Guarante - IROS 2023"
         author = "<u>S. Fujii</u>, Q.-C. Pham."
+        url = "https://doi.org/10.1109/IROS55552.2023.10342287"
         description = "Proposed time-optimal and safe path tracking method:{{<youtube A14uHsjO9so>}}"
 
         [[params.publications.list]]
         title = "Realtime Trajectory Smoothing with Neural Nets - ICRA 2022"
         author = "<u>S. Fujii</u>, Q.-C. Pham."
+        url = "https://doi.org/10.1109/ICRA46639.2022.9812418"
         description = "Proposed real-time trajectory smoother powered by neural-network:{{<youtube XQFEmFyUaj8>}}"
+
+    [params.experiences]
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Robotics Software Engineer"
+        dates = "04/2015 - Present"
+        link = "#"
+        company = "DENSO-SOKEN / Nagoya"
+        details = """
+- Developing the fastest and safe robotic manipulation algorithms for human-robot collaboration (see publications)\n - Developed all the software from embedded system to ROS application for SLAM-based navigation of AGVs
+    - Simple Mobile UI for task dispatch, using Vue.js/Django
+    - MPC-based collision avoidance
+    - Fast PRM-based path planning
+- Developed low-cost ROS-based self-driving vehicle system for assembly transportaion in-and-out factories
+
+{{<youtube k7tDJjT_BZA>}}
+"""
+        [[params.jobs.list]]
+        position = "Robotics Engineer / Intern"
+        company = "MUJIN / Tokyo"
+        dates = "08/2013 - 03/2015"
+        details = """
+- Developed a backend of a bin-picking vision system, demonstrated in IReX 2013
+- Developed a fully-automated Hand-Eye calibration system. The key feature is "no parameters tuning" required. The system automatically plan and execute robot trajectories, collect images and calibrate camera/robot parameters
+
+{{<youtube iUIkLlH2eCA>}}
+"""
+
+        [[params.jobs.list]]
+        position = "Master Student"
+        company = "the University of Tokyo / Tokyo"
+        dates = "04/2013 - 03/2015"
+        details = """
+- Developed a fully-automated cable-picking system. This is based on a work in MUJIN.
+
+{{<youtube kGQNURzFiyY>}}
+"""
+
+        [[params.jobs.list]]
+        position = "Web Developer"
+        company = "foo.log Inc / Tokyo"
+        dates = "04/2013 - 10/2013"
+        details = "- Developed Ruby on Rails based web application"
+
+    # Projects section
+    [params.projects]
+        title = "Projects"
+
+        [[params.projects.list]]
+        title = "Team Scramble - Robocup Small-size League Group"
+        url = "https://scramble-robot.org/"
+        dates = "08/2017 - 08/2020"
+        description = "Worked as an AI software lead programmer"
+
+        [[params.projects.list]]
+        title = "Team RoboTech - NHK/ABU Robocon Group"
+        url = "https://robotech.tuk.t.u-tokyo.ac.jp/"
+        dates = "04/2009 - 07/2013"
+        description = "Worked as a lead mechanical programmer"
 
     # Skills section
     [params.skills]
         title = "Skills"
 
         [[params.skills.list]]
-        skill = "Skill 1, Skill 2"
-        skillrating = 95 # out of 100
-                
+        category = "Programming Languages"
+        skill = "C++, Python, Rust, Ruby, JavaScript/TypeScript"
+
         [[params.skills.list]]
-        skill = "Skill 3"
-        skillrating = 90
-		
+        category = "Tools and Frameworks"
+        skill = "OpenRAVE, PCL, OpenCV, PyTorch, CUDA, ROS, Docker, Git, LaTeX, Vim etc."
+
         [[params.skills.list]]
-        skill = "Skill 4"
-        skillrating = 80
+        category = "Manufacturing"
+        skill = "SolidEdge, Milling Machine, Lathe, CNC, Laser Cutting Machine, and Drilling Machine"
