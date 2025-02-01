@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://ompugao.github.io/"
 languageCode = "en-us"
 disableKinds = ["taxonomy"]
 
@@ -6,16 +6,16 @@ disableKinds = ["taxonomy"]
     writeStats = true
 
 [params]
-    title = "Sada Theme"
-    author = "Darshan Baral"
-    description = "Simple portfolio theme"
-    copyright = "Custom copyright message"
-    theme = "dark" # `dark` or `light`
+    title = "Shohei Fujii"
+    author = "Shohei Fujii"
+    description = "Shohei Fujii's resume"
+    copyright = ""
+    theme = "light" # `dark` or `light`
 
     # Profile section
     [params.profile]
-        name = "First Last"
-        title = "Abbr., K.A."
+        name = "Shohei Fujii"
+        title = "Ph.D.,"
         photo = "images/profile.jpg"
 
     # Section for links to social websites
@@ -24,70 +24,75 @@ disableKinds = ["taxonomy"]
 
         [[params.social.list]]
         icon = "fab fa-linkedin-in"
-        url = "#"
+        url = "https://www.linkedin.com/in/shohei-fujii"
         title = "LinkedIn"
 
         [[params.social.list]]
         icon = "fab fa-github"
-        url = "#"
+        url = "https://github.com/ompugao"
         title = "GitHub"
-		
-		[[params.social.list]]
-        icon = "ai ai-google-scholar"
-        url = "#"
-        title = "Google Scholar"
-		
-		[[params.social.list]]
-        icon = "ai ai-researchgate"
-        url = "#"
-        title = "ResearchGate"		
+
+        # [[params.social.list]]
+        # icon = "ai ai-google-scholar"
+        # url = "#"
+        # title = "Google Scholar"
+
+        # [[params.social.list]]
+        # icon = "ai ai-researchgate"
+        # url = "#"
+        # title = "ResearchGate"
 
     # Education section
     [params.education]
         title = "Education"
 
         [[params.education.list]]
-        degree = "Masters in Degree 1"
-        college = "University Number 1"
-        dates = "2016 - 2018"
-        thesis_title = "Title of the dissertation"
-        thesis_link = "#"
+        degree = "Ph.D. in Robotics"
+        college = "Nanyang Technological University, Mechanical and Aerospace Engineering"
+        dates = "08/2020 - 07/2024"
+        thesis_title = "GPU-accelerated real-time motion planning for safe human-robot collaboration"
+        thesis_link = "https://doi.org/10.32657/10356/178799"
 
         [[params.education.list]]
-        degree = "Bachelors in Degree 2"
-        college = "University Number 2"
-        dates = "2010 - 2014"
+        degree = "M.S. in Information Science and Technology"
+        college = "the University of Tokyo, Graduate School of Information Science and Technology"
+        dates = "04/2013 - 03/2015"
+
+        [[params.education.list]]
+        degree = "B.S. in Engineering"
+        college = "the University of Tokyo, Graduate School of Information Science and Technology"
+        dates = "04/2009 - 03/2013"
 
     # Languages section
     [params.language]
         title = "Languages"
 
         [[params.language.list]]
-        language = "English"
-        level = "Fluent"
-				
+        language = "Japanese"
+        level = "Native"
+
         [[params.language.list]]
-        language = "Bird"
-        level = "Basic"
+        language = "English"
+        level = "Proficient"
 
     # Interests section
-    [params.hobbies]
-        title = "Hobbies"
+    # [params.hobbies]
+    #     title = "Hobbies"
 
-        [[params.hobbies.list]]
-        interest = "Travelling"
-		
-		[[params.hobbies.list]]
-        interest = "Music"
+    #     [[params.hobbies.list]]
+    #     interest = "Travelling"
 
-        [[params.hobbies.list]]
-        interest = "Flying"
+    #     [[params.hobbies.list]]
+    #     interest = "Music"
 
-        [[params.hobbies.list]]
-        interest = "Baking"
+    #     [[params.hobbies.list]]
+    #     interest = "Flying"
+
+    #     [[params.hobbies.list]]
+    #     interest = "Baking"
 
     [params.aboutme]
-        description = "Tagline. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description = "Passionate about Robotics and Automation, dedicated to eliminating tedious tasks from this world."
 
     # Experiences section
     [params.experiences]
@@ -113,12 +118,30 @@ disableKinds = ["taxonomy"]
         [[params.projects.list]]
         title = "Awesome Project 1"
         url = "#"
-        description = "Description of the *awesome* project 1"
+        description = "Description of the *awesome* project 1 {{<youtube k7tDJjT_BZA>}}"
 		
 		[[params.projects.list]]
         title = "Awesome Project 2"
         url = "#"
         description = "Description of the **awesome** project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+    [params.publications]
+        title = "Publications"
+
+        [[params.publications.list]]
+        title = "Real-time Batched Distance Computation for Time-Optimal Safe Path Tracking - ICRA2024"
+        author = "<u>S. Fujii</u>, Q.-C. Pham."
+        description = "Proposed real-time distance computation method for time-optimal and safe robot-control in real-world applications:{{<youtube iZP_6rD34lA>}}"
+
+        [[params.publications.list]]
+        title = "Time-Optimal Path Tracking with ISO Safety Guarante - IROS 2023"
+        author = "<u>S. Fujii</u>, Q.-C. Pham."
+        description = "Proposed time-optimal and safe path tracking method:{{<youtube A14uHsjO9so>}}"
+
+        [[params.publications.list]]
+        title = "Realtime Trajectory Smoothing with Neural Nets - ICRA 2022"
+        author = "<u>S. Fujii</u>, Q.-C. Pham."
+        description = "Proposed real-time trajectory smoother powered by neural-network:{{<youtube XQFEmFyUaj8>}}"
 
     # Skills section
     [params.skills]
