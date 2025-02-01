@@ -11,7 +11,6 @@
     {{ partial "language.html" . }}
     <!--{{ partial "hobby.html" . }}-->
   </div>
-  {{- partial "footer.html" . -}}
 </section>
 
 <section class="w-full sm:w-3/5 px-3">  
@@ -21,6 +20,11 @@
   {{ partial "project.html" . }}
   {{ partial "award.html" . }}
   {{ partial "skill.html" . }}
+</section>
+<section
+  class="w-full sm:w-5/5 flex flex-col justify-between"
+>
+  {{- partial "footer.html" . -}}
 </section>
 {{ end }}
 
