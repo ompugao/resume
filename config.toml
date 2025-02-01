@@ -91,6 +91,49 @@ disableKinds = ["taxonomy"]
     #     [[params.hobbies.list]]
     #     interest = "Baking"
 
+    ## Awards and Honors
+    [params.awards]
+        title = "Awards and Honors"
+
+        [[params.awards.list]]
+        title = "Grand Prize"
+        dates = "2018"
+        details = "RoboCup Japan Open Small Size League, Japan Robot Society Award, as an AI software engineer"
+
+        [[params.awards.list]]
+        title = "First Prize"
+        details = "DENSO Innovative Production Technology Exhibition for Factory Automation, the Most Innovative Technology Award, as a Lead software engineer"
+        dates = "2016"
+        [[params.awards.list]]
+        title = "Grand Prize"
+        details = "ABU Asia-Pacific Robot Contest (ABU Robocon), as a Mechanical engineer in 2011, and a Lead mechanical engineer in 2012"
+        dates = "2011, 2012"
+
+        [[params.awards.list]]
+        title = "First Prize"
+        details = "NHK Robocon"
+        dates = "2011, 2012"
+
+        [[params.awards.list]]
+        title = "Excellence Award"
+        details = "An award from the Head of the Engineering Department, the University of Tokyo"
+        dates = "2013"
+
+        [[params.awards.list]]
+        title = "Excellence Award"
+        details = "An Award from the University President, the University of Tokyo"
+        dates = "2011"
+
+        [[params.awards.list]]
+        title = "Excellence Award"
+        details = "Japan Society of Mechanical Engineers Hatakeyama Award"
+        dates = "2013"
+
+        [[params.awards.list]]
+        title = "Quality Demo Award"
+        details = "Creative Engineering Project, the University of Tokyo Faculty of Engineering,"
+        dates = "2012"
+
     [params.aboutme]
         description = "Passionate about Robotics and Automation, dedicated to eliminating tedious tasks from this world."
 

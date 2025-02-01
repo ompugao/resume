@@ -1,0 +1,12 @@
+
+<div class="mb-8">
+  <h2 class="mt-8 sm:mt-0">
+    <i class="fas fa-briefcase"></i>
+    {{ .Site.Params.experiences.title }}
+  </h2>
+
+  {{ range.Site.Params.awards.list }}
+  <h4><p class="ml-1">{{ .title }} &middot; {{ .dates | markdownify }}</p></h4>
+  <p class="ml-2 mb-0">{{ .details | markdownify }}</p>
+  {{ end }}
+</div>
