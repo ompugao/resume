@@ -233,3 +233,7 @@ disableKinds = ["taxonomy"]
         [[params.skills.list]]
         category = "Manufacturing"
         skill = "SolidEdge, Milling Machine, Lathe, CNC, Laser Cutting Machine, and Drilling Machine"
+
+[services]
+    [services.googleAnalytics]
+        id = 'G-F46WDJKTFN'
