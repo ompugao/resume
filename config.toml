@@ -8,7 +8,7 @@ disableKinds = ["taxonomy"]
 [params]
     title = "Shohei Fujii"
     author = "Shohei Fujii"
-    description = "Shohei Fujii's resume"
+    description = "Shohei Fujii"
     copyright = ""
     theme = "light" # `dark` or `light`
 
