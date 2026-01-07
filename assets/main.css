@@ -10,3 +10,136 @@
     content: "" !important;
   }
 }
+
+/* Override prose max-width for wider layout */
+.prose {
+  max-width: none !important;
+}
+
+/* Constrain profile image on large displays */
+section img[alt="Shohei Fujii"] {
+  max-width: 150px !important;
+  max-height: 150px !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+/* Fix layout for large displays - sidebar fixed width, main content fills rest */
+@media (min-width: 640px) {
+  main {
+    max-width: 1400px !important;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  
+  /* Sidebar - fixed width */
+  .sidebar-section {
+    max-width: 240px !important;
+    min-width: 220px !important;
+    width: 240px !important;
+    flex-shrink: 0 !important;
+  }
+  
+  /* Main content - fills remaining space */
+  .main-content-section {
+    flex: 1 !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0;
+  }
+}
+
+/* YouTube video embeds - larger size */
+div[style*="padding-bottom: 56.25%"] {
+  max-width: 400px;
+  height: 225px !important; /* 16:9 ratio */
+  padding-bottom: 0 !important;
+  margin: 0.5rem 0 0.75rem 0;
+  display: inline-block;
+  position: relative;
+}
+
+div[style*="padding-bottom: 56.25%"] iframe {
+  width: 400px !important;
+  height: 225px !important;
+  position: relative !important;
+}
+
+/* Remove empty paragraphs spacing */
+p:empty {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make sections more compact */
+.mb-8 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-8 p {
+  margin-bottom: 0.25rem;
+}
+
+/* Reduce spacing for better visual flow */
+h3.mb-1 {
+  margin-top: 0.75rem;
+}
+
+h3.mb-1:first-of-type {
+  margin-top: 0;
+}
+
+/* Compact list styling */
+ul, ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.125rem;
+}
+
+/* Compact sidebar sections */
+.sidebar-section h3 {
+  margin-bottom: 0.25rem !important;
+  margin-top: 0.5rem !important;
+}
+
+.sidebar-section p {
+  margin-bottom: 0.125rem !important;
+  margin-top: 0 !important;
+}
+
+/* Reduce name size in sidebar */
+.sidebar-section h1 {
+  font-size: 1.75rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.sidebar-section h2 {
+  font-size: 1rem !important;
+  margin-top: 0 !important;
+}
+
+/* Reduce spacing above main content */
+.main-content-section {
+  padding-top: 1.5rem !important;
+}
+
+.main-content-section > div:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Reduce section heading margins */
+.main-content-section h2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.main-content-section > div:first-child h2 {
+  margin-top: 0 !important;
+}
