@@ -2,10 +2,10 @@
     <div>
         <a href="{{ .Site.BaseURL }}" class="text-2xl font-bold">{{ .Site.Title }}</a>
     </div>
-    <nav>
+    <nav class="hidden md:block">
         <ul class="flex space-x-4">
             {{ range .Site.Menus.main }}
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            <li><a href="{{ .URL }}" class="hover:text-blue-500 dark:hover:text-blue-400">{{ .Name }}</a></li>
             {{ end }}
         </ul>
     </nav>

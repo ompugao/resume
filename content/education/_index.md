@@ -4,7 +4,6 @@ weight: 1
 ---
 
 ---
-
 ### Ph.D. in Robotics
 **Nanyang Technological University, Mechanical and Aerospace Engineering** | _08/2020 - 07/2024_
 

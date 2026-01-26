@@ -1,51 +1,53 @@
 {{ define "main" }}
-<div class="py-8">
-    {{ partial "profile.html" . }}
-
-    {{ with .Site.GetPage "/education" }}
-        <div class="mt-8">
-            <h2 class="text-3xl font-bold">{{ .Title }}</h2>
-            <div class="prose dark:prose-invert max-w-none">
-                {{ .Content }}
+<div class="flex flex-wrap lg:flex-nowrap py-8">
+    <div class="w-full lg:w-1/3 lg:pr-8">
+        {{ partial "profile.html" . }}
+    </div>
+    <div class="w-full lg:w-2/3 lg:pl-8">
+        {{ with .Site.GetPage "/education" }}
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
             </div>
-        </div>
-    {{ end }}
+        {{ end }}
 
-    {{ with .Site.GetPage "/publications" }}
-        <div class="mt-8">
-            <h2 class="text-3xl font-bold">{{ .Title }}</h2>
-            <div class="prose dark:prose-invert max-w-none">
-                {{ .Content }}
+        {{ with .Site.GetPage "/publications" }}
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
             </div>
-        </div>
-    {{ end }}
+        {{ end }}
 
-    {{ with .Site.GetPage "/experience" }}
-        <div class="mt-8">
-            <h2 class="text-3xl font-bold">{{ .Title }}</h2>
-            <div class="prose dark:prose-invert max-w-none">
-                {{ .Content }}
+        {{ with .Site.GetPage "/experience" }}
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
             </div>
-        </div>
-    {{ end }}
+        {{ end }}
 
-    {{ with .Site.GetPage "/projects" }}
-        <div class="mt-8">
-            <h2 class="text-3xl font-bold">{{ .Title }}</h2>
-            <div class="prose dark:prose-invert max-w-none">
-                {{ .Content }}
+        {{ with .Site.GetPage "/projects" }}
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
             </div>
-        </div>
-    {{ end }}
+        {{ end }}
 
-    {{ with .Site.GetPage "/awards" }}
-        <div class="mt-8">
-            <h2 class="text-3xl font-bold">{{ .Title }}</h2>
-            <div class="prose dark:prose-invert max-w-none">
-                {{ .Content }}
+        {{ with .Site.GetPage "/awards" }}
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
             </div>
-        </div>
-    {{ end }}
-
+        {{ end }}
+    </div>
 </div>
 {{ end }}
