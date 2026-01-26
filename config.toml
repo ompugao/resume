@@ -30,11 +30,11 @@ title = "Shohei Fujii's Portfolio"
 
 [params]
     author = "Shohei Fujii"
-    description = "Passionate about Robotics and Automation, dedicated to eliminating tedious tasks from this world."
     [params.profile]
         name = "Shohei Fujii"
         title = "Ph.D. in Robotics"
         photo = "images/profile.jpg"
+        description = "Passionate about Robotics and Automation, dedicated to eliminating tedious tasks from this world."
     # Section for links to social websites
     [params.social]
         title = "Links"
