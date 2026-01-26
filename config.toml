@@ -167,11 +167,9 @@ disableKinds = ["taxonomy"]
         link = "#"
         company = "DENSO-SOKEN / Nagoya"
         details = """
-- Developing the fastest and safe robotic manipulation algorithms for human-robot collaboration (see publications)\n - Developed all the software from embedded system to ROS application for SLAM-based navigation of AGVs
-    - Simple Mobile UI for task dispatch, using Vue.js/Django
-    - MPC-based collision avoidance
-    - Fast PRM-based path planning
-- Developed low-cost ROS-based self-driving vehicle system for assembly transportaion in-and-out factories
+- Developing the fastest and safe robotic manipulation algorithms for human-robot collaboration (see publications).
+- Developed all the software from embedded system to ROS application for SLAM-based navigation of AGVs.
+- Developed low-cost ROS-based self-driving vehicle system for assembly transportaion in-and-out factories.
 
 {{<youtube k7tDJjT_BZA>}}
 """

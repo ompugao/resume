@@ -7,6 +7,6 @@
 
   {{ range.Site.Params.awards.list }}
   <h4><p class="ml-1">{{ .title }} &middot; {{ .dates | markdownify }}</p></h4>
-  <p class="ml-2 mb-0">{{ .details | markdownify }}</p>
+  <p class="ml-2 mb-0 text-gray-500">{{ .details | markdownify }}</p>
   {{ end }}
 </div>

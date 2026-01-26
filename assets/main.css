@@ -1,13 +1,140 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Override gray colors to use RGB instead of oklch for better compatibility */
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-500: #6b7280;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  
+  /* Custom dark background colors */
+  --color-dark1: #202124;
+  --color-dark2: #2a2b2e;
+  --color-dark3: #3c4043;
+  
+  /* Make these available as bg-dark1, bg-dark2, bg-dark3 */
+  --background-dark1: var(--color-dark1);
+  --background-dark2: var(--color-dark2);
+  --background-dark3: var(--color-dark3);
+}
+
+@layer base {
+  h1 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin: 12px 0;
+  }
+  h3 {
+    font-size: 1.17em;
+    margin: 12px 0;
+  }
+  h4 {
+    font-size: 1em;
+    margin: 12px 0;
+  }
+  h5 {
+    font-size: 0.83em;
+    margin: 12px 0;
+  }
+  h6 {
+    font-size: 0.67em;
+    margin: 12px 0;
+  }
+}
 
 @layer components {
+  /* Default light mode text color */
+  body {
+    color: rgb(31 41 55); /* gray-800 - dark text for light mode */
+  }
+  
+  /* Prose-specific styles */
   .prose code::after {
     content: "";
   }
+  
   .prose code::before {
     content: "" !important;
+  }
+  
+  .prose a {
+    color: rgb(29 78 216); /* blue-700 */
+    text-decoration: none;
+  }
+  
+  .prose a:hover {
+    color: rgb(30 58 138); /* blue-900 */
+    text-decoration: underline;
+  }
+  
+  .prose p {
+    margin-bottom: 0;
+    line-height: 1.5em;
+    margin-top: 0.25em;
+  }
+  
+  .prose h2 {
+    margin-bottom: 1em;
+    margin-top: 0;
+  }
+  
+  /* Dark mode colors */
+  .dark {
+    color: rgb(229 231 235); /* gray-200 */
+  }
+  
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    color: rgb(243 244 246); /* gray-100 */
+  }
+  
+  .dark a {
+    color: rgb(96 165 250); /* blue-400 */
+  }
+  
+  .dark a:hover {
+    color: rgb(147 197 253); /* blue-300 */
+  }
+  
+  .dark .prose {
+    color: rgb(229 231 235);
+  }
+  
+  .dark .prose p,
+  .dark .prose code,
+  .dark .prose strong,
+  .dark .prose td,
+  .dark .prose blockquote {
+    color: rgb(229 231 235);
+  }
+  
+  .dark .prose h1,
+  .dark .prose h2,
+  .dark .prose h3,
+  .dark .prose h4,
+  .dark .prose h5,
+  .dark .prose h6 {
+    color: rgb(243 244 246);
+  }
+  
+  .dark .prose a {
+    color: rgb(96 165 250); /* blue-400 */
+  }
+  
+  .dark .prose a:hover {
+    color: rgb(147 197 253); /* blue-300 */
   }
 }
 
@@ -74,6 +201,7 @@ p:empty {
 }
 
 /* Make sections more compact */
+/*
 .mb-8 {
   margin-bottom: 1.5rem !important;
 }
@@ -81,8 +209,10 @@ p:empty {
 .mb-8 p {
   margin-bottom: 0.25rem;
 }
+*/
 
 /* Reduce spacing for better visual flow */
+/*
 h3.mb-1 {
   margin-top: 0.75rem;
 }
@@ -90,6 +220,7 @@ h3.mb-1 {
 h3.mb-1:first-of-type {
   margin-top: 0;
 }
+*/
 
 /* Compact list styling */
 ul, ol {
@@ -99,6 +230,7 @@ ul, ol {
 
 li {
   margin-bottom: 0.125rem;
+  color: gray;
 }
 
 /* Compact sidebar sections */
