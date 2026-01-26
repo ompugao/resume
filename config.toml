@@ -1,31 +1,40 @@
-baseURL = "https://ompugao.github.io/"
+baseURL = "https://ompugao.github.io/resume/"
 languageCode = "en-us"
 title = "Shohei Fujii's Portfolio"
 
-
-# The main an only menu
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 2
-  [[menu.main]]
-    name = "Experience"
-    url = "/experience/"
-    weight = 3
-  [[menu.main]]
-    name = "Publications"
-    url = "/publications/"
-    weight = 4
-
+# [menu]
+#   [[menu.main]]
+#     name = "Home"
+#     url = "/"
+#     weight = 1
+#   [[menu.main]]
+#     name = "Education"
+#     url = "/education/"
+#     weight = 2
+#   [[menu.main]]
+#     name = "Projects"
+#     url = "/projects/"
+#     weight = 3
+#   [[menu.main]]
+#     name = "Experience"
+#     url = "/experience/"
+#     weight = 4
+#   [[menu.main]]
+#     name = "Publications"
+#     url = "/publications/"
+#     weight = 5
+#   [[menu.main]]
+#     name = "Awards"
+#     url = "/awards/"
+#     weight = 6
 
 [params]
     author = "Shohei Fujii"
     description = "Passionate about Robotics and Automation, dedicated to eliminating tedious tasks from this world."
+    [params.profile]
+        name = "Shohei Fujii"
+        title = "Ph.D. in Robotics"
+        photo = "images/profile.jpg"
     # Section for links to social websites
     [params.social]
         title = "Links"
@@ -43,3 +52,6 @@ title = "Shohei Fujii's Portfolio"
 [services]
     [services.googleAnalytics]
         id = 'G-F46WDJKTFN'
+
+[markup.goldmark.renderer]
+  unsafe = true
