@@ -1,10 +1,17 @@
-<header
-  class="flex flex-row items-center mb-2 p-3 bg-gray-300 dark:bg-gray-700 justify-end"
->
-<!--
-  <i
-    class="toggle-theme cursor-pointer fas {{ if eq .Site.Params.theme `light` }}fa-moon{{ else }}fa-sun{{ end }} text-gray-700 hover:text-gray-500 dark:text-gray-100 dark:hover:text-gray-300"
-    onclick="toggleTheme(this)"
-  ></i>
--->
+<header class="flex justify-between items-center py-4">
+    <div>
+        <a href="{{ .Site.BaseURL }}" class="text-2xl font-bold">{{ .Site.Title }}</a>
+    </div>
+    <nav>
+        <ul class="flex space-x-4">
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+    <div>
+        <button id="theme-toggle" class="px-4 py-2 rounded bg-gray-200 dark:bg-gray-800">
+            Toggle
+        </button>
+    </div>
 </header>

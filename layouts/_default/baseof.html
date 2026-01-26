@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language }}" class="{{ .Site.Params.theme }}">
-  {{- partial "head.html" . -}}
-  <body
-    class="mx-auto prose prose-lg pb-3 dark:prose-dark bg-gray-100 dark:bg-dark1 duration-250"
-  >
-    <main class="flex sm:flex-row-reverse flex-row flex-wrap max-w-screen-lg mx-auto px-4" style="max-width: none;">
-      {{- block "main" . }}{{ end }}
-    </main>
-  </body>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ $style := resources.Get "css/main.css" | postCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div class="container mx-auto px-4">
+        {{ partial "header.html" . }}
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer.html" . }}
+    </div>
+    {{ $script := resources.Get "js/main.js" }}
+    <script src="{{ $script.Permalink }}" defer></script>
+</body>
 </html>

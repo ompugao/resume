@@ -1,0 +1,8 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/tailwind";
+@import "@tailwindcss/typography";
+
+@theme {
+  --content: "./layouts/**/*.html", "./content/**/*.md";
+  --darkMode: "class";
+}

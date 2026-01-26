@@ -1,23 +1,31 @@
 baseURL = "https://ompugao.github.io/"
 languageCode = "en-us"
-disableKinds = ["taxonomy"]
+title = "Shohei Fujii's Portfolio"
 
-[build]
-    writeStats = true
+
+# The main an only menu
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name = "Experience"
+    url = "/experience/"
+    weight = 3
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 4
+
 
 [params]
-    title = "Shohei Fujii"
     author = "Shohei Fujii"
-    description = "About"
-    copyright = ""
-    theme = "light" # `dark` or `light`
-
-    # Profile section
-    [params.profile]
-        name = "Shohei Fujii"
-        title = "Ph.D. in Robotics"
-        photo = "images/profile.jpg"
-
+    description = "Passionate about Robotics and Automation, dedicated to eliminating tedious tasks from this world."
     # Section for links to social websites
     [params.social]
         title = "Links"
@@ -31,206 +39,6 @@ disableKinds = ["taxonomy"]
         icon = "fab fa-github"
         url = "https://github.com/ompugao"
         title = "GitHub"
-
-        # [[params.social.list]]
-        # icon = "ai ai-google-scholar"
-        # url = "#"
-        # title = "Google Scholar"
-
-        # [[params.social.list]]
-        # icon = "ai ai-researchgate"
-        # url = "#"
-        # title = "ResearchGate"
-
-    # Education section
-    [params.education]
-        title = "Education"
-
-        [[params.education.list]]
-        degree = "Ph.D. in Robotics"
-        college = "Nanyang Technological University, Mechanical and Aerospace Engineering"
-        dates = "08/2020 - 07/2024"
-        thesis_title = "GPU-accelerated real-time motion planning for safe human-robot collaboration"
-        thesis_link = "https://doi.org/10.32657/10356/178799"
-
-        [[params.education.list]]
-        degree = "M.S. in Information Science and Technology"
-        college = "the University of Tokyo, Graduate School of Information Science and Technology"
-        dates = "04/2013 - 03/2015"
-
-        [[params.education.list]]
-        degree = "B.S. in Engineering"
-        college = "the University of Tokyo, Graduate School of Information Science and Technology"
-        dates = "04/2009 - 03/2013"
-
-    # Languages section
-    [params.language]
-        title = "Languages"
-
-        [[params.language.list]]
-        language = "Japanese"
-        level = "Native"
-
-        [[params.language.list]]
-        language = "English"
-        level = "Proficient"
-
-    # Interests section
-    # [params.hobbies]
-    #     title = "Hobbies"
-
-    #     [[params.hobbies.list]]
-    #     interest = "Travelling"
-
-    #     [[params.hobbies.list]]
-    #     interest = "Music"
-
-    #     [[params.hobbies.list]]
-    #     interest = "Flying"
-
-    #     [[params.hobbies.list]]
-    #     interest = "Baking"
-
-    ## Awards and Honors
-    [params.awards]
-        title = "Awards and Honors"
-
-        [[params.awards.list]]
-        title = "Grand Prize"
-        dates = "2018"
-        details = "RoboCup Japan Open Small Size League, Japan Robot Society Award, as an AI software engineer"
-
-        [[params.awards.list]]
-        title = "First Prize"
-        details = "DENSO Innovative Production Technology Exhibition for Factory Automation, the Most Innovative Technology Award, as a Lead software engineer"
-        dates = "2016"
-        [[params.awards.list]]
-        title = "Grand Prize"
-        details = "ABU Asia-Pacific Robot Contest (ABU Robocon), as a Mechanical engineer in 2011, and a Lead mechanical engineer in 2012"
-        dates = "2011, 2012"
-
-        [[params.awards.list]]
-        title = "First Prize"
-        details = "NHK Robocon"
-        dates = "2011, 2012"
-
-        [[params.awards.list]]
-        title = "Excellence Award"
-        details = "An award from the Head of the Engineering Department, the University of Tokyo"
-        dates = "2013"
-
-        [[params.awards.list]]
-        title = "Excellence Award"
-        details = "An Award from the University President, the University of Tokyo"
-        dates = "2011"
-
-        [[params.awards.list]]
-        title = "Excellence Award"
-        details = "Japan Society of Mechanical Engineers Hatakeyama Award"
-        dates = "2013"
-
-        [[params.awards.list]]
-        title = "Quality Demo Award"
-        details = "Creative Engineering Project, the University of Tokyo Faculty of Engineering,"
-        dates = "2012"
-
-    [params.aboutme]
-        description = "Passionate about Robotics and Automation, dedicated to eliminating tedious tasks from this world."
-
-    [params.publications]
-        title = "Publications"
-
-        [[params.publications.list]]
-        title = "Real-time Batched Distance Computation for Time-Optimal Safe Path Tracking - ICRA2024"
-        author = "<u>S. Fujii</u>, Q.-C. Pham."
-        url = "https://doi.org/10.1109/ICRA57147.2024.10610196"
-        description = "Proposed real-time distance computation method for time-optimal and safe robot-control in real-world applications:{{<youtube iZP_6rD34lA>}}"
-
-        [[params.publications.list]]
-        title = "Time-Optimal Path Tracking with ISO Safety Guarante - IROS 2023"
-        author = "<u>S. Fujii</u>, Q.-C. Pham."
-        url = "https://doi.org/10.1109/IROS55552.2023.10342287"
-        description = "Proposed time-optimal and safe path tracking method:{{<youtube A14uHsjO9so>}}"
-
-        [[params.publications.list]]
-        title = "Realtime Trajectory Smoothing with Neural Nets - ICRA 2022"
-        author = "<u>S. Fujii</u>, Q.-C. Pham."
-        url = "https://doi.org/10.1109/ICRA46639.2022.9812418"
-        description = "Proposed real-time trajectory smoother powered by neural-network:{{<youtube XQFEmFyUaj8>}}"
-
-    [params.experiences]
-        title = "Experiences"
-
-        [[params.jobs.list]]
-        position = "Robotics Software Engineer"
-        dates = "04/2015 - Present"
-        link = "#"
-        company = "DENSO-SOKEN / Nagoya"
-        details = """
-- Developing the fastest and safe robotic manipulation algorithms for human-robot collaboration (see publications).
-- Developed all the software from embedded system to ROS application for SLAM-based navigation of AGVs.
-- Developed low-cost ROS-based self-driving vehicle system for assembly transportaion in-and-out factories.
-
-{{<youtube k7tDJjT_BZA>}}
-"""
-        [[params.jobs.list]]
-        position = "Robotics Engineer / Intern"
-        company = "MUJIN / Tokyo"
-        dates = "08/2013 - 03/2015"
-        details = """
-- Developed a backend of a bin-picking vision system, demonstrated in IReX 2013
-- Developed a fully-automated Hand-Eye calibration system. The key feature is "no parameters tuning" required. The system automatically plan and execute robot trajectories, collect images and calibrate camera/robot parameters
-
-{{<youtube iUIkLlH2eCA>}}
-"""
-
-        [[params.jobs.list]]
-        position = "Master Student"
-        company = "the University of Tokyo / Tokyo"
-        dates = "04/2013 - 03/2015"
-        details = """
-- Developed a fully-automated cable-picking system. This is based on a work in MUJIN.
-
-{{<youtube kGQNURzFiyY>}}
-"""
-
-        [[params.jobs.list]]
-        position = "Web Developer"
-        company = "foo.log Inc / Tokyo"
-        dates = "04/2013 - 10/2013"
-        details = "- Developed Ruby on Rails based web application"
-
-    # Projects section
-    [params.projects]
-        title = "Projects"
-
-        [[params.projects.list]]
-        title = "Team Scramble - Robocup Small-size League Group"
-        url = "https://scramble-robot.org/"
-        dates = "08/2017 - 08/2020"
-        description = "Worked as an AI software lead programmer"
-
-        [[params.projects.list]]
-        title = "Team RoboTech - NHK/ABU Robocon Group"
-        url = "https://robotech.tuk.t.u-tokyo.ac.jp/"
-        dates = "04/2009 - 07/2013"
-        description = "Worked as a lead mechanical programmer"
-
-    # Skills section
-    [params.skills]
-        title = "Skills"
-
-        [[params.skills.list]]
-        category = "Programming Languages"
-        skill = "C++, Python, Rust, Ruby, JavaScript/TypeScript"
-
-        [[params.skills.list]]
-        category = "Tools and Frameworks"
-        skill = "OpenRAVE, PCL, OpenCV, PyTorch, CUDA, ROS, Docker, Git, LaTeX, Vim etc."
-
-        [[params.skills.list]]
-        category = "Manufacturing"
-        skill = "SolidEdge, Milling Machine, Lathe, CNC, Laser Cutting Machine, and Drilling Machine"
 
 [services]
     [services.googleAnalytics]

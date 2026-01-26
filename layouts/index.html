@@ -1,34 +1,34 @@
 {{ define "main" }}
+<div class="py-8">
+    <h1 class="text-4xl font-bold">{{ .Site.Title }}</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400">{{ .Site.Params.description }}</p>
 
-{{ template "_internal/google_analytics.html" . }}
+    {{ with .Site.GetPage "/experience" }}
+        <div class="mt-8">
+            <h2 class="text-3xl font-bold">{{ .Title }}</h2>
+            <div class="prose dark:prose-invert max-w-none">
+                {{ .Content }}
+            </div>
+        </div>
+    {{ end }}
 
-<section
-  class="w-full sm:w-1/4 bg-gray-200 dark:bg-dark2 rounded shadow flex flex-col justify-between sidebar-section"
->
-  <div>
-    {{- partial "header.html" . -}}
-    {{ partial "name.html" . }}
-    {{ partial "profilePhoto" . }}
-    {{ partial "social.html" . }}
-    {{ partial "aboutDesc" . }}
-    {{ partial "language.html" . }}
-    <!--{{ partial "hobby.html" . }}-->
-  </div>
-</section>
+    {{ with .Site.GetPage "/projects" }}
+        <div class="mt-8">
+            <h2 class="text-3xl font-bold">{{ .Title }}</h2>
+            <div class="prose dark:prose-invert max-w-none">
+                {{ .Content }}
+            </div>
+        </div>
+    {{ end }}
 
-<section class="w-full sm:w-3/4 px-3 main-content-section">
-  {{ partial "education.html" . }}
-  {{ partial "publication.html" . }}
-  {{ partial "experience.html" . }}
-  {{ partial "project.html" . }}
-  {{ partial "skill.html" . }}
-  {{ partial "award.html" . }}
-</section>
-<section
-  class="w-full sm:w-5/5 flex flex-col justify-between"
->
-  {{- partial "footer.html" . -}}
-</section>
+    {{ with .Site.GetPage "/publications" }}
+        <div class="mt-8">
+            <h2 class="text-3xl font-bold">{{ .Title }}</h2>
+            <div class="prose dark:prose-invert max-w-none">
+                {{ .Content }}
+            </div>
+        </div>
+    {{ end }}
+
+</div>
 {{ end }}
-
-
