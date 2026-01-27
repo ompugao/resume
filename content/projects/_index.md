@@ -15,4 +15,4 @@ Worked as an AI software lead programmer.
 ### Team RoboTech - NHK/ABU Robocon Group
 [robotech.tuk.t.u-tokyo.ac.jp](https://robotech.tuk.t.u-tokyo.ac.jp/) | _04/2009 - 07/2013_
 
-Worked as a lead mechanical programmer.
+Worked as a lead mechanical engineer.

@@ -40,6 +40,15 @@
             </div>
         {{ end }}
 
+        {{ with .Site.GetPage "/skills" }}
+            <div id="skills" class="mb-8 scroll-mt-20">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
+
         {{ with .Site.GetPage "/awards" }}
             <div id="awards" class="mb-8 scroll-mt-20">
                 <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
