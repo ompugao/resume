@@ -5,7 +5,7 @@ weight: 3
 
 ---
 
-### Robotics Software Engineer
+### Robotics Software Research Engineer
 **DENSO-SOKEN / Nagoya** | _04/2015 - Present_
 
 - Developing the fastest and safe robotic manipulation algorithms for human-robot collaboration (see publications).
