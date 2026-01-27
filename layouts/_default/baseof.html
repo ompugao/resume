@@ -15,6 +15,7 @@
     </script>
     {{ $style := resources.Get "css/main.css" | postCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ template "_internal/google_analytics.html" . }}
 </head>
 <body class="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
     <div class="max-w-screen-xl mx-auto px-4">
