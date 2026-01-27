@@ -1,34 +1,53 @@
 {{ define "main" }}
+<div class="flex flex-wrap lg:flex-nowrap py-8">
+    <div class="w-full lg:w-1/3 lg:pr-8">
+        {{ partial "profile.html" . }}
+    </div>
+    <div class="w-full lg:w-2/3 lg:pl-8">
+        {{ with .Site.GetPage "/education" }}
+            <div id="education" class="mb-8 scroll-mt-20">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
 
-{{ template "_internal/google_analytics.html" . }}
+        {{ with .Site.GetPage "/publications" }}
+            <div id="publications" class="mb-8 scroll-mt-20">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
 
-<section
-  class="w-full sm:w-1/4 bg-gray-200 dark:bg-dark2 rounded shadow flex flex-col justify-between sidebar-section"
->
-  <div>
-    {{- partial "header.html" . -}}
-    {{ partial "name.html" . }}
-    {{ partial "profilePhoto" . }}
-    {{ partial "social.html" . }}
-    {{ partial "aboutDesc" . }}
-    {{ partial "language.html" . }}
-    <!--{{ partial "hobby.html" . }}-->
-  </div>
-</section>
+        {{ with .Site.GetPage "/experience" }}
+            <div id="experience" class="mb-8 scroll-mt-20">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
 
-<section class="w-full sm:w-3/4 px-3 main-content-section">
-  {{ partial "education.html" . }}
-  {{ partial "publication.html" . }}
-  {{ partial "experience.html" . }}
-  {{ partial "project.html" . }}
-  {{ partial "skill.html" . }}
-  {{ partial "award.html" . }}
-</section>
-<section
-  class="w-full sm:w-5/5 flex flex-col justify-between"
->
-  {{- partial "footer.html" . -}}
-</section>
+        {{ with .Site.GetPage "/projects" }}
+            <div id="projects" class="mb-8 scroll-mt-20">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
+
+        {{ with .Site.GetPage "/awards" }}
+            <div id="awards" class="mb-8 scroll-mt-20">
+                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
+                    {{ .Content }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>
 {{ end }}
-
-

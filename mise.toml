@@ -1,2 +1,11 @@
 [tools]
 hugo = "latest"
+node = "latest"
+
+[tasks.install]
+description = "install npm packages"
+run = "run install"
+
+[tasks.serve]
+description = "run dev server"
+run = "hugo server"
