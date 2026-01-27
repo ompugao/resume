@@ -1,15 +1,12 @@
-# sada Theme
-CV/Resume of @ompugao.
-
-This repo is based on [darshanbaral/sada](https://github.com/darshanbaral/sada.git).
+# CV/Resume of @ompugao.
 
 ## Installation
 
 Inside the folder of your Hugo site run:
 
 ```shell
-git clone https://github.com/darshanbaral/sada.git
-cd sada
+git clone https://github.com/ompugao/resume
+cd resume
 npm install
 hugo server
 ```
