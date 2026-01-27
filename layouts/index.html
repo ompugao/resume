@@ -6,7 +6,7 @@
     <div class="w-full lg:w-2/3 lg:pl-8">
         {{ with .Site.GetPage "/education" }}
             <div id="education" class="mb-8 scroll-mt-20">
-                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <h2 class="text-3xl font-bold mb-4"><i class="fas fa-graduation-cap"></i> {{ .Title }}</h2>
                 <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
                     {{ .Content }}
                 </div>
@@ -15,7 +15,7 @@
 
         {{ with .Site.GetPage "/publications" }}
             <div id="publications" class="mb-8 scroll-mt-20">
-                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <h2 class="text-3xl font-bold mb-4"><i class="fas fa-paperclip"></i> {{ .Title }}</h2>
                 <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
                     {{ .Content }}
                 </div>
@@ -24,7 +24,7 @@
 
         {{ with .Site.GetPage "/experience" }}
             <div id="experience" class="mb-8 scroll-mt-20">
-                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <h2 class="text-3xl font-bold mb-4"><i class="fas fa-briefcase"></i> {{ .Title }}</h2>
                 <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
                     {{ .Content }}
                 </div>
@@ -33,7 +33,7 @@
 
         {{ with .Site.GetPage "/projects" }}
             <div id="projects" class="mb-8 scroll-mt-20">
-                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <h2 class="text-3xl font-bold mb-4"><i class="fas fa-project-diagram"></i> {{ .Title }}</h2>
                 <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
                     {{ .Content }}
                 </div>
@@ -51,7 +51,7 @@
 
         {{ with .Site.GetPage "/awards" }}
             <div id="awards" class="mb-8 scroll-mt-20">
-                <h2 class="text-3xl font-bold mb-4">{{ .Title }}</h2>
+                <h2 class="text-3xl font-bold mb-4"><i class="fas fa-star"></i> {{ .Title }}</h2>
                 <div class="prose prose-sm prose-hr:mb-4 dark:prose-invert max-w-none">
                     {{ .Content }}
                 </div>
