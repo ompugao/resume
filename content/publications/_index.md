@@ -14,7 +14,7 @@ Proposed real-time distance computation method for time-optimal and safe robot-c
 
 ---
 
-### Time-Optimal Path Tracking with ISO Safety Guarante - IROS 2023
+### Time-Optimal Path Tracking with ISO Safety Guarantee - IROS 2023
 **<u>S. Fujii</u>, Q.-C. Pham.** | [DOI](https://doi.org/10.1109/IROS55552.2023.10342287)
 
 Proposed time-optimal and safe path tracking method:

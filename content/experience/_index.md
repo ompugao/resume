@@ -9,8 +9,9 @@ weight: 3
 **DENSO-SOKEN / Nagoya** | _04/2015 - Present_
 
 - Developing the fastest and safe robotic manipulation algorithms for human-robot collaboration (see publications).
-- Developed all the software from embedded system to ROS application for SLAM-based navigation of AGVs.
-- Developed low-cost ROS-based self-driving vehicle system for assembly transportaion in-and-out factories.
+- Developing multi-view real-time visual 3d perception with foundation models for safe human-robot collaboration.
+- Developed the full-stack software from embedded system, control/planning algorithm to ROS-based UI for SLAM-based navigation of AGVs.
+- Developed low-cost ROS-based self-driving vehicle system for assembly transportation in-and-out factories.
 
 {{< youtube k7tDJjT_BZA >}}
 
@@ -19,8 +20,8 @@ weight: 3
 ### Robotics Engineer / Intern
 **MUJIN / Tokyo** | _08/2013 - 03/2015_
 
-- Developed a backend of a bin-picking vision system, demonstrated in IReX 2013
-- Developed a fully-automated Hand-Eye calibration system. The key feature is "no parameters tuning" required. The system automatically plan and execute robot trajectories, collect images and calibrate camera/robot parameters
+- Developed a backend of a bin-picking vision system, demonstrated in IReX 2013.
+- Developed a fully-automated Hand-Eye calibration system. The key feature is "no parameters tuning" required. The system automatically plan and execute robot trajectories, collect images and calibrate camera/robot parameters.
 
 {{< youtube iUIkLlH2eCA >}}
 
@@ -38,4 +39,4 @@ weight: 3
 ### Web Developer
 **foo.log Inc / Tokyo** | _04/2013 - 10/2013_
 
-- Developed Ruby on Rails based web application
+- Developed Ruby on Rails based web application.
